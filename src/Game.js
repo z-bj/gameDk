@@ -7,11 +7,14 @@ class Result extends Component {
   };
 
   render() {
+    let result;
+
     if (this.state.winner) {
-      return <h1>You win {this.state.name} !!!</h1>;
+      result = <h1>You win {this.state.name} !!!</h1>;
     } else {
-      return <h1>You lose {this.state.name} !!!</h1>;
+      result = <h1>You lose {this.state.name} !!!</h1>;
     }
+    return result;
   }
 }
 
